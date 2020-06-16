@@ -6,7 +6,7 @@ cria_arquivo() {
 
    sleep 2
 
-   dd if=/dev/urandom of=arquivo.txt bs=$1 count=1 status=progress
+   dd if=/dev/zero of=arquivo.txt bs=$1 count=1 status=progress
 
    
 }

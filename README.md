@@ -3,9 +3,9 @@
 
 
 ## Como executar os scripts ?
-Os comandos sao equivalentes aos outros scripts
+Os comandos são equivalentes para os outros scripts
 
-****Permitir execucao do script:****
+****Permitir execução do script:****
 
     chmod +x criar-arquivos.sh
    

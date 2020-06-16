@@ -12,11 +12,7 @@ cria_arquivo() {
 }
 
 
-
-
 a=1
-
-
 
    echo "Digite o Tamanho do Arquivo (5KB,10KB,100KB,1MB,10MB,100MB ou 500MB), e pressione [ENTER]:"
    read tamanho
@@ -40,5 +36,4 @@ do
 
    a=`expr $a + 1`
 done
-
 

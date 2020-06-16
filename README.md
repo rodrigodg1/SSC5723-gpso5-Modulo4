@@ -1,15 +1,14 @@
-
 # Sistemas de Arquivos
 
 
 ## Como executar os scripts ?
-Os comandos são equivalentes para os outros scripts
+Os comandos são equivalentes aos outros scripts
 
-****Permitir execução do script:****
+ **1. Permitir execução do script:**
 
-    chmod +x criar-arquivo.sh
-   
-   **Executar o script:**
+    chmod +x criar-arquivos.sh
 
-    ./criar-arquivo.sh
+ **2. Executar o script:**
+
+    ./criar-arquivos.sh
 

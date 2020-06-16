@@ -14,7 +14,8 @@ cria_arquivo() {
 
 a=1
 
-   echo "Digite o Tamanho do Arquivo (5KB,10KB,100KB,1MB,10MB,100MB ou 500MB), e pressione [ENTER]:"
+   echo "Digite o Tamanho do Arquivo\n\n5KB \n10KB \n100KB \n1MB\n10MB \n100MB \n500MB
+\n\nExemplo:1MB [ENTER]:"
    read tamanho
 
 #LOOP PARA AS 10 CRIACOES

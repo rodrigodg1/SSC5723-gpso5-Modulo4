@@ -7,9 +7,9 @@ Os comandos são equivalentes para os outros scripts
 
 ****Permitir execução do script:****
 
-    chmod +x criar-arquivos.sh
+    chmod +x criar-arquivo.sh
    
    **Executar o script:**
 
-    ./criar-arquivos.sh
+    ./criar-arquivo.sh
 

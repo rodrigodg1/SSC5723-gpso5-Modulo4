@@ -5,11 +5,12 @@
 cria_arquivo() {
 
    sleep 2
-
-   dd if=/dev/zero of=arquivo.txt bs=$1 count=1 status=progress
-
+   
+   dd if=/dev/zero of=arquivo$2.txt bs=$1 count=1 status=progress
+   
    
 }
+
 
 
 a=1
@@ -18,23 +19,23 @@ a=1
 \n\nExemplo:1MB [ENTER]:"
    read tamanho
 
-#LOOP PARA AS 10 CRIACOES
+#LOOP PARA AS 10 ITERACOES
 while [ "$a" -lt 11 ]   
 do
    
 
-   echo "Criando arquivo ($a/10)  ..."
-   	
-   cria_arquivo $tamanho
    
+   echo "\n\nCriando arquivo ($a/10)  ..."		
+   cria_arquivo $tamanho $a
    echo "Arquivo $a criado !"
-	
-   sleep 3
-	
-   rm arquivo.txt	
-   echo "Arquivo $a removido !"
-   
+
 
    a=`expr $a + 1`
 done
+
+
+
+
+
+
 

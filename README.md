@@ -11,11 +11,11 @@ Para o correto funcionamento do experimento, é recomendável seguir a ordem de 
 
 Os comandos são equivalentes aos outros scripts
 
- **1. Permitir execução do script:**
+ ##**1. Permitir execução do script:**
 
     chmod +x criar-arquivos.sh
 
- **2. Executar o script:**
+ ##**2. Executar o script:**
 
     ./criar-arquivos.sh
 

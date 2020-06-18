@@ -9,7 +9,7 @@ Para o correto funcionamento do experimento, é recomendável seguir a ordem de 
  2. Ler Arquivos
  3. Destruir Arquivos
 
-Os comandos são equivalentes aos outros scripts
+**Os comandos são equivalentes aos outros scripts**
 
  ## **1. Permitir execução do script:**
 

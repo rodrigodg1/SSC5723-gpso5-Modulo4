@@ -5,7 +5,7 @@
 destroi_arquivo() {
 
 
-   echo "Diretorio sendo utilizado para DESTRUICAO: $2"	
+   echo "Caminho sendo utilizado para DESTRUICAO: $2"	
    sleep 2
 
    #realiza a remocao do arq 
@@ -17,10 +17,10 @@ destroi_arquivo() {
 
 a=1
 
-   echo "\nDigite o Caminho do Sistema de Arquivo Destino"
+   echo "\nDigite o Caminho do Sistema de Arquivo Destino:"
    echo "Exemplo: /media/rodrigo/FAT32/"
    echo "ou"
-   echo ". para o Diretorio Atual"
+   echo ". para o Diretorio Atual\n"
    read caminho
 
 
@@ -40,7 +40,6 @@ do
 
    a=`expr $a + 1`
 done
-
 
 
 

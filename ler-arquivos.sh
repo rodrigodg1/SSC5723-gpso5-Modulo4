@@ -8,7 +8,7 @@ ler_arquivo() {
    #VERIFICA SE O DIRETORIO PARA CRIACAO EH O ATUAL	
 
 		
-   echo "Diretorio sendo utilizado para LEITURA: $2"	
+   echo "Caminho sendo utilizado para LEITURA: $2"	
    sleep 2
    
    
@@ -21,10 +21,10 @@ ler_arquivo() {
 
 a=1
 
-   echo "\nDigite o Caminho do Sistema de Arquivo Destino"
+   echo "\nDigite o Caminho do Sistema de Arquivo Destino:"
    echo "Exemplo: /media/rodrigo/FAT32/"
    echo "ou"
-   echo ". para o Diretorio Atual"
+   echo ". para o Diretorio Atual\n"
    read caminho
 
 
@@ -45,7 +45,6 @@ do
 
    a=`expr $a + 1`
 done
-
 
 
 

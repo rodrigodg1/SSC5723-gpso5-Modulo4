@@ -4,11 +4,12 @@
 #FUNÇÃO RESPONSAVEL POR DESTRUIR O ARQUIVO QUE RECEBE ($1) DO LOOP
 destroi_arquivo() {
 
+
+   echo "Diretorio sendo utilizado para DESTRUICAO: $2"	
    sleep 2
-   
-   #time -p rm arquivo$1.txt
-   #stace -c por possuir mais casas decimais
-   strace -c rm arquivo$1.txt
+
+   #realiza a remocao do arq 
+   strace -c rm $2/arquivo$1.txt
    
 }
 
@@ -16,24 +17,29 @@ destroi_arquivo() {
 
 a=1
 
+   echo "\nDigite o Caminho do Sistema de Arquivo Destino"
+   echo "Exemplo: /media/rodrigo/FAT32/"
+   echo "ou"
+   echo ". para o Diretorio Atual"
+   read caminho
+
+
 
 #LOOP PARA A REMOÇÃO DOS ARQUIVOS
 while [ "$a" -lt 11 ]   
 do
    
-
    
-   echo "\n\nDestruindo arquivo ($a/10)  ..."		
+   echo "\nDestruindo arquivo ($a/10)  ..."		
    
    #CHAMA A FUNÇÃO PASSANDO O INDICE DO ARQUIVO QUE FOI CRIADO ANTERIORMENTE
-   destroi_arquivo $a
+   destroi_arquivo $a $caminho
    
    echo "Arquivo $a destruido !"
 
 
    a=`expr $a + 1`
 done
-
 
 
 

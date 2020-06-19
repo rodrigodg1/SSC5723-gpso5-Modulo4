@@ -19,23 +19,25 @@ ler_arquivo() {
 
 
 
-a=1
 
-   echo "\nDigite o Caminho do Sistema de Arquivo Destino:"
+   echo "\nDigite o caminho do sistema de arquivo destino:"
    echo "Exemplo: /media/rodrigo/FAT32/"
-   echo "ou"
-   echo ". para o Diretorio Atual\n"
+   echo "ou . para o diretorio atual\n"
    read caminho
 
+   echo "\nInforme a QUANTIDADE de arquivos a serem LIDOS para a analise:"
+   read quantidade
+
+a=1
 
 
 #LOOP PARA A LEITURA DOS ARQUIVOS CRIADOS
-while [ "$a" -lt 11 ]   
+while [ "$a" -lt `expr $quantidade + 1` ]   
 do
    
 
    
-   echo "\nLendo o arquivo ($a/10)  ..."	
+   echo "\nLendo o arquivo ($a/$quantidade)  ..."	
    
    #CHAMA A FUNÇÃO PASSANDO O INDICE DO ARQUIVO QUE FOI CRIADO ANTERIORMENTE
    ler_arquivo $a $caminho

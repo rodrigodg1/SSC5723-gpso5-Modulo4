@@ -14,23 +14,24 @@ destroi_arquivo() {
 }
 
 
+   echo "\nDigite o CAMINHO do sistema de arquivo destino:"
+   echo "Exemplo: /media/rodrigo/FAT32/"
+   echo "ou . para o Diretorio Atual\n"
+   read caminho
+
+   echo "\nInforme a QUANTIDADE de arquivos a serem REMOVIDOS para a analise:"
+   read quantidade	
+
 
 a=1
 
-   echo "\nDigite o Caminho do Sistema de Arquivo Destino:"
-   echo "Exemplo: /media/rodrigo/FAT32/"
-   echo "ou"
-   echo ". para o Diretorio Atual\n"
-   read caminho
-
-
 
 #LOOP PARA A REMOÇÃO DOS ARQUIVOS
-while [ "$a" -lt 11 ]   
+while [ "$a" -lt `expr $quantidade + 1` ]   
 do
    
    
-   echo "\nDestruindo arquivo ($a/10)  ..."		
+   echo "\nDestruindo arquivo ($a/$quantidade)  ..."		
    
    #CHAMA A FUNÇÃO PASSANDO O INDICE DO ARQUIVO QUE FOI CRIADO ANTERIORMENTE
    destroi_arquivo $a $caminho

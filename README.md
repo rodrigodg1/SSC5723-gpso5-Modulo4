@@ -14,8 +14,12 @@ Para o correto funcionamento do experimento, é recomendável seguir a ordem de 
  ## **1. Permitir execução do script:**
 
     chmod +x criar-arquivos.sh
+    chmod +x ler-arquivos.sh
+    chmod +x destruir-arquivos.sh
 
  ## **2. Executar o script:**
 
     ./criar-arquivos.sh
+    ./ler-arquivos.sh
+    ./destruir-arquivos.sh
 

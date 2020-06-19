@@ -5,7 +5,7 @@
 cria_arquivo() {
 
 		
-   echo "Diretorio sendo utilizado para CRIACAO: $3"	
+   echo "Caminho sendo utilizado para CRIACAO: $3"	
    sleep 2
    
    #CRIA O ARQUIVO
@@ -22,10 +22,10 @@ a=1
 \n\nExemplo:1MB [ENTER]:"
    read tamanho
 
-   echo "\nDigite o Caminho do Sistema de Arquivo Destino"
+   echo "\nDigite o Caminho do Sistema de Arquivo Destino:"
    echo "Exemplo: /media/rodrigo/FAT32/"
    echo "ou"
-   echo ". para o Diretorio Atual"
+   echo ". para o Diretorio Atual\n"
    read caminho
 
 
@@ -45,7 +45,6 @@ do
 
    a=`expr $a + 1`
 done
-
 
 
 
